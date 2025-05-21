@@ -41,4 +41,5 @@ Copy Tokyonight-Dark-Moon.ovt into ~/.config/obs-studio/themes/
 ### Rofi
 
 Copy tokyonight.rasi into ~/.config/rofi/themes/
+
 Use @theme "tokyonight" to import into main rofi config
