@@ -1,0 +1,91 @@
+@-moz-document url-prefix("chrome:") {
+  /* Color Scheme */
+  :root {
+    --zen-main-browser-background: #222436 !important;
+    --zen-main-browser-background-toolbar: #222436 !important;
+    --lwt-accent-color-inactive: #222436 !important;
+    --zen-appcontent-border: none !important;
+    --toolbar-bgcolor: #222436 !important;
+    --input-bgcolor: #1b1d2b !important;
+    --toolbar-field-focus-background-color: #222436 !important;
+    --zen-media-control-bg: #1b1d2b !important;
+    --tab-selected-textcolor: #e9e9ed !important;
+    --toolbar-color: #e9e9ed !important;
+    --toolbar-field-color: #e9e9ed !important;
+    --lwt-text-color: #e9e9ed !important;
+    --arrowpannel-color: #e9e9ed !important;
+    --input-color: #e9e9ed !important;
+    --chrome-content-separator-color: #1b1d2b !important;
+  }
+  #tabbrowser-tabs {
+    --tab-selected-bgcolor: #2d3f76 !important;
+  }
+  /* Disable status bar */
+  #statuspanel {
+    display: none !important;
+  }
+  /* Disable titlebar */
+  .titlebar-button {
+    display: none !important;
+  }
+  /* Urlbar*/
+  #urlbar-background {
+    background: #1e2030 !important;
+    outline: none !important;
+    border-radius: 8px !important;
+    margin: 2px !important;
+  }
+  #urlbar-search-mode-indicator {
+    background-color: #1b1d2b !important;
+  }
+  #urlbar-search-mode-indicator-close {
+    color: #86e1fc !important;
+  }
+  #urlbar[open] {
+    --urlbarView-separator-color: #ff966c !important;
+    --urlbar-box-bgcolor: #1b1d2b !important;
+    background-image: linear-gradient(90deg, #82aaff, #86e1f3) !important;
+    border-radius: 8px !important;
+  }
+  .urlbar-input-container {
+    border-radius: 8px !important;
+  }
+  .urlbarView-row[selected] {
+    background-color: #2d3f76 !important;
+    border-radius: 8px !important;
+  }
+  .urlbarView-row-inner[selected] {
+    background-color: #2d3f76 !important;
+    border-radius: 8px !important;
+  }
+  /* Right-click menu*/
+  menupopup,
+  panel:not(.autoscroller) {
+    --panel-background: #222436 !important;
+  }
+  menu:hover,
+  menuitem:hover {
+    background-color: #2d3f76 !important;
+    border-radius: 8px !important;
+  }
+  arrowscrollbox.menupopup-arrowscrollbox {
+    border: none !important;
+  }
+  menuseparator {
+    display: none !important;
+  }
+  /* Panels */
+  panel toolbarseparator {
+    display: none !important;
+  }
+  toolbarbutton {
+    border-radius: 8px !important;
+  }
+  toolbarbutton:hover {
+    background-color: #2d3f76 !important;
+  }
+  stack,
+  image {
+    background-color: transparent !important;
+  }
+}
