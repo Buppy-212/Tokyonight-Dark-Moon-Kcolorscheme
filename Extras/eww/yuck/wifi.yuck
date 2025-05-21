@@ -1,0 +1,15 @@
+(defwidget wifi []
+  (box  :orientation "h"  :tooltip "${wifi.name}" :class "wifi"
+  (button :onclick "uwsm app -- kitty  --title=minitty -e nmtui &" :class "wifi button" :valign "center"
+      (label :class "wifi icon" :text "${wifi.icon}")
+    )
+  )
+)
+
+(defwidget vwifi []
+  (box  :orientation "v"  :tooltip "${wifi.name}" :class "wifi"
+  (button :onclick "uwsm app -- kitty  --title=leftty -e nmtui &" :class "wifi vbutton" :valign "center"
+      (label :class "wifi icon" :text "${wifi.icon}")
+    )
+  )
+)

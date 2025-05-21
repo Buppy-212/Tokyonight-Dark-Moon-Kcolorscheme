@@ -1,0 +1,17 @@
+max-history=8
+max-visible=8
+font=Adwaita Sans 13
+background-color=#222436
+text-color=#e9e9ed
+width=400
+height=300
+border-color=#82aaff
+border-radius=8
+margin=2
+default-timeout=3000
+layer=overlay
+icon-path=/usr/share/icons/Papirus-Dark/
+
+[urgency=high]
+border-color=#ff575f
+default-timeout=0

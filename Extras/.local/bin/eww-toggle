@@ -1,0 +1,42 @@
+#!/usr/bin/env dash
+open() {
+  hyprctl monitors -j | jq '.[] | select(.id) | .id' | while IFS= read -r id; do
+    eww open-many --no-daemonize "$1":"$1""$id" --arg "$1""$id":screen="$id"
+  done
+}
+close() {
+  hyprctl monitors -j | jq '.[] | select(.id) | .id' | while IFS= read -r id; do
+    eww close --no-daemonize "$1""$id"
+  done
+}
+
+case "$1" in
+"init")
+  open vbar
+  echo "vbar" >/tmp/eww_state
+  if [ "$(readlink "$XDG_STATE_HOME"/wallpaper)" = "$HOME/Pictures/Wallpapers/Frieren.png" ]; then
+    open date
+  fi
+  ;;
+"vbar")
+  close bar
+  open vbar
+  echo "vbar" >/tmp/eww_state
+  ;;
+"date")
+  close date || open date
+  ;;
+*)
+  if [ "$(cat /tmp/eww_state)" = "vbar" ]; then
+    close vbar
+    open bar
+    echo "bar" >/tmp/eww_state
+  elif [ "$(cat /tmp/eww_state)" = "bar" ]; then
+    close bar
+    echo "none" >/tmp/eww_state
+  else
+    open vbar
+    echo "vbar" >/tmp/eww_state
+  fi
+  ;;
+esac

@@ -1,0 +1,21 @@
+(defwidget brightness []
+  (eventbox :class "brightness" :onrightclick "scripts/brightness.sh --toggle" :onscroll "scripts/brightness.sh {}" :tooltip "Brightness" :onclick "eww update revealBrightness=true" :onhoverlost "eww update revealBrightness=false" :onmiddleclick "ddcutil setvcp 10 ${brightness.value}"
+    (box :orientation "h" :space-evenly false
+      (label :class "brightness icon" :text "${revealBrightness ? brightness.value : brightness.icon}")
+      (revealer :reveal revealBrightness :transition "slideleft"
+        (scale :onchange "scripts/brightness.sh {}" :min 0 :max 101 :orientation "h" :value "${brightness.value}" :class "brightness scale" :round-digits 0)
+      )
+    )
+  )
+)
+
+(defwidget vbrightness []
+  (eventbox :class "brightness" :onrightclick "scripts/brightness.sh --toggle" :onscroll "scripts/brightness.sh {}" :tooltip "Brightness" :onclick "eww update revealBrightness=true" :onhoverlost "eww update revealBrightness=false" :onmiddleclick "ddcutil setvcp 10 ${brightness.value}"
+    (box :orientation "v" :space-evenly false
+      (revealer :reveal revealBrightness :transition "slideup"
+        (scale :onchange "scripts/brightness.sh {}" :min 0 :max 101 :flipped true :orientation "v" :value "${brightness.value}" :class "brightness vscale" :round-digits 0)
+      )
+      (label :class "brightness icon ${revealBrightness}" :text "${!revealBrightness ? brightness.icon : brightness.value == 100 ? "ff" : brightness.value}")
+    )
+  )
+)

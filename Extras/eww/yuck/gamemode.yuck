@@ -1,0 +1,15 @@
+(defwidget gamemode []
+  (box :orientation "h" :class "gamemode"
+    (button :class "gamemode button" :onclick "scripts/gamemode.sh --toggle" :tooltip "Gamemode"
+      (label :class "gamemode icon" :text gamemode)
+    )
+  )
+)
+
+(defwidget vgamemode []
+  (box :orientation "v" :class "gamemode"
+    (button :class "gamemode vbutton" :onclick "scripts/gamemode.sh --toggle" :tooltip "Gamemode"
+      (label :class "gamemode icon" :text gamemode)
+    )
+  )
+)

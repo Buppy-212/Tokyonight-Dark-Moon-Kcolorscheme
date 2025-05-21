@@ -1,0 +1,58 @@
+.power {
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  color: $red;
+  padding: 0;
+  .label {
+    margin: 0 10px 0 2px;
+  }
+  .vlabel {
+    padding: 0 4px 0 0;
+  }
+  &:hover {
+    background-color: $darkgray;
+  }
+
+  &:active {
+    background-color: $black;
+  }
+}
+
+.power.scale {
+  padding: 0 10px;
+  trough {
+    background-color: $background;
+    border-radius: 5px;
+    min-width: 100px;
+    highlight {
+      background: $red;
+      border-radius: 5px;
+      padding: 10px 0;
+    }
+    slider {
+      all: unset;
+      background-color: transparent;
+      color: transparent;
+    }
+  }
+}
+
+.power.vscale {
+  padding: 10px 0;
+  trough {
+    background-color: $background;
+    border-radius: 5px;
+    min-height: 100px;
+    highlight {
+      background: $red;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+    slider {
+      all: unset;
+      background-color: transparent;
+      color: transparent;
+    }
+  }
+}

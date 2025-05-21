@@ -1,0 +1,46 @@
+.clock {
+  color: $foreground;
+  padding: 0 8px;
+  margin: 0;
+  border-radius: 8px;
+  background: transparent;
+  &:hover {
+    background-color: $darkgray;
+  }
+  &:active {
+    background-color: $black;
+  }
+}
+
+.vclock {
+  color: $foreground;
+  padding: 0 3px;
+  margin: 0;
+  border-radius: 8px;
+  background: transparent;
+  &:hover {
+    background-color: $darkgray;
+  }
+  &:active {
+    background-color: $black;
+  }
+}
+
+.date {
+  background: transparent;
+  .day {
+    font-size: 450%;
+  }
+  .month {
+    font-size: 200%;
+  }
+}
+
+.date0 {
+  font-size: 85%;
+  font-family: "Z003";
+}
+
+.date1 {
+  font-family: "Z003";
+}

@@ -1,0 +1,64 @@
+(defwidget left []
+  (box :class "modules left" :orientation "h" :halign "start" :space-evenly false
+    (workspaces)
+  )
+)
+
+(defwidget center []
+  (box :class "modules center" :halign "center" :valign "center" :orientation "h"  :space-evenly false
+    (clock)
+  )
+)
+
+(defwidget right []
+  (box :class "modules right" :halign "end" :valign "center" :orientation "h" :spacing 12 :space-evenly false
+    (tray)
+    (bluetooth)
+    (volume)
+    (gamemode)
+    (idle)
+    (wifi)
+    (battery)
+    (brightness)
+    (updates)
+    (power)
+  )
+)
+
+(defwidget bar []
+  (centerbox :orientation "h" :class "modules"
+      (left)
+      (center)
+      (right)
+    )
+)
+
+(defwidget top []
+  (box :class "modules top" :orientation "v" :halign "center" :valign "start" :space-evenly false
+    (vworkspaces)
+  )
+)
+
+(defwidget bottom []
+  (box :class "modules bottom" :halign "center" :valign "end" :orientation "v" :spacing 8 :space-evenly false
+    (vtray)
+    (vbluetooth)
+    (vvolume)
+    (vgamemode)
+    (vidle)
+    (vwifi)
+    (vbattery)
+    (vbrightness)
+    (vclock)
+    (updates)
+    (vpower)
+  )
+)
+
+(defwidget vbar []
+  (centerbox :orientation "v" :class "modules"
+    (top)
+    (box)
+    (bottom)
+    )
+)

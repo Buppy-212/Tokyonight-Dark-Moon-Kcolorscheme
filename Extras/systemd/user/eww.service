@@ -1,0 +1,17 @@
+[Unit]
+Description=ElKowars Wacky Widgets
+Documentation=https://elkowar.github.io/eww/
+PartOf=graphical-session.target
+Requires=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/eww daemon --no-daemonize
+ExecStartPost=%h/.local/bin/eww-toggle init
+Slice=session.slice
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

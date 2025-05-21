@@ -1,0 +1,27 @@
+configuration {
+  modi: "drun,window,wallpaper,filebrowser,power";
+  run-command: "uwsm app -- {cmd}";
+  font: "JetBrainsMono Nerd Font SemiBold 13";
+  disable-history: true;
+  hover-select: true;
+  me-accept-entry: "!MousePrimary";
+  kb-cancel: "Control+[47],Escape";
+  kb-row-down: "Control+n,Control+j,Down";
+  kb-row-up: "Control+p,Control+k,Up";
+  kb-remove-to-eol: "";
+  kb-accept-entry: "Return,Control+m,Control+o";
+  sort: true;
+  sorting-method: "fzf";
+  matching: "fuzzy";
+  display-wallpaper: "";
+  display-drun: "󰵆";
+  display-window: "󰖯";
+  display-power: "󰐥";
+  display-filebrowser: "";
+  show-icons: true;
+  filebrowser {
+    command: "uwsm app -- xdg-open";
+  }
+} 
+
+@theme "tokyonight"

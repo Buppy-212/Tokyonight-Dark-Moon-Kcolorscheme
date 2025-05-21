@@ -1,0 +1,22 @@
+(defwidget clock []
+  (box :orientation "h"
+    (button :class "clock" :onclick "eww-toggle vbar"
+      (label :text {formattime(EWW_TIME, "%a %d %b %H:%M")})
+    )
+  )
+)
+
+(defwidget vclock []
+  (box :orientation "v"
+    (button :class "vclock" :tooltip {formattime(EWW_TIME, "%a %d %b")} :onclick "eww-toggle"
+      (label :text {formattime(EWW_TIME, "%H%n%M")})
+    )
+  )
+)
+
+(defwidget date [screen]
+  (box :orientation "v" :class "date${screen}"
+    (label :text {formattime(EWW_TIME, "%A")} :class "date${screen} day") 
+    (label :text {formattime(EWW_TIME, "%d %B %Y")} :class "date${screen} month")
+  )
+)

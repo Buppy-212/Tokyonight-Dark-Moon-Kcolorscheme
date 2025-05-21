@@ -1,0 +1,11 @@
+#!/usr/bin/env dash
+options() {
+  echo "Bluetooth - bluetui"
+  echo "Network - nmtui"
+  echo "Task Manager - btop"
+  echo "Terminal - zsh"
+  echo "Update - update"
+  echo "Volume - pulsemixer"
+}
+OPTION=$(options | fzf | cut -d- -f 2)
+dash -c "$OPTION"

@@ -1,0 +1,25 @@
+configuration {
+  modi: "bookmarks";
+  sort: true;
+  sorting-method: "fzf";
+  scroll-method: 0;
+  matching: "fuzzy";
+  font: "JetBrainsMono Nerd Font SemiBold 13";
+  hover-select: true;
+  me-accept-entry: "!MousePrimary";
+  kb-cancel: "Control+[47],Escape";
+  kb-row-down: "Control+n,Control+j,Down";
+  kb-row-up: "Control+p,Control+k,Up";
+  kb-remove-to-eol: "";
+  kb-accept-entry: "Return,Control+m,Control+o";
+}
+
+@theme "tokyonight"
+
+mode-switcher {
+  enabled: false;
+}
+
+listview {
+  lines: 16;
+}

@@ -26,20 +26,25 @@ and set QT_QPA_PLATFORMTHEME=qt6ct.
 
 Copy userChrome.css into ~/.zen/(your_profile)/chrome/
 
-### Musescore
-
-Copy Musescore.ini into ~/.config/
-
-### Vesktop
-
-Copy midnight-tokyonight-moon.theme.css into ~/.config/vesktop/themes/
-
 ### OBS
 
-Copy Tokyonight-Dark-Moon.ovt into ~/.config/obs-studio/themes/
+Copy Tokyonight-Dark-Moon.ovt uses the default Yari theme
+
+### Hyprland
+
+Uses uwsm managed session.
 
 ### Rofi
 
-Copy tokyonight.rasi into ~/.config/rofi/themes/
+Rofi.sh is the intended way to open rofi. Refer to hyprland keybinds for usage.
+Wallpaper script uses hyprpaper.
 
-Use @theme "tokyonight" to import into main rofi config
+### Eww
+
+Requires dash, jq and python and the systemd units in this repo. Uses paru to update.
+
+```bash
+sudo pacman -S dash jq python
+sudo pacman -S bluetui pulsemixer btop hyprsunset
+systemctl --user enable update-check.timer eww.service
+```

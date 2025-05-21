@@ -1,0 +1,71 @@
+.workspaces {
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.workspace {
+  border-radius: 8px;
+  margin: 0 2px;
+  padding: 0 8px;
+  min-height: 0;
+  min-width: 0;
+  background-color: transparent;
+
+  &.occupied {
+    background-color: $darkgray;
+  }
+  &.current {
+    background-color: $yellow;
+    color: $black;
+    &.minimised {
+      background-color: $orange;
+    }
+  }
+}
+
+.workspace:hover {
+  background-color: $lightgray;
+  &.current {
+    background-color: darker($yellow);
+    &.minimised {
+      background-color: darker($orange);
+    }
+  }
+}
+
+.vworkspaces {
+  border-radius: 8px;
+  padding: 0;
+  margin: 2px 0;
+}
+
+.vworkspace {
+  border-radius: 8px;
+  margin: 2px 0;
+  padding: 5px 8px;
+  min-width: 0;
+  min-height: 0;
+  background-color: transparent;
+
+  &.occupied {
+    background-color: $darkgray;
+  }
+  &.current {
+    background-color: $yellow;
+    color: $black;
+    &.minimised {
+      background-color: $orange;
+    }
+  }
+}
+
+.vworkspace:hover {
+  background-color: $lightgray;
+  &.current {
+    background-color: darker($yellow);
+    &.minimised {
+      background-color: darker($orange);
+    }
+  }
+}

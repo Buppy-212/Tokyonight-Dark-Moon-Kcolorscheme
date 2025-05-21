@@ -1,0 +1,27 @@
+.wifi {
+  .button {
+    color: $green;
+    padding: 0;
+    background: transparent;
+    &:hover {
+      background-color: $darkgray;
+    }
+    &:active {
+      background-color: $black;
+    }
+  }
+  .vbutton {
+    color: $green;
+    padding: 0;
+    background: transparent;
+    &:hover {
+      background-color: $darkgray;
+    }
+    &:active {
+      background-color: $black;
+    }
+  }
+  .icon {
+    margin: 0 4px 0 0;
+  }
+}

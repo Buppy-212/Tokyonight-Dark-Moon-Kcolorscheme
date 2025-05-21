@@ -1,0 +1,22 @@
+(defwidget power []
+  (eventbox :onclick "eww update revealPower=true" :onhoverlost "eww update revealPower=false" :class "power" :tooltip "Power"
+    (box :orientation "h" :space-evenly false
+      (label :text "" :class "power label")
+      (revealer :reveal revealPower :transition "slideleft"
+        (scale :onchange "scripts/power.sh {}" :min 0 :max 101 :orientation "h" :value 10 :class "power scale" :round-digits 0)
+      )
+    )
+  )
+)
+
+
+(defwidget vpower []
+  (eventbox :onclick "eww update revealPower=true" :onhoverlost "eww update revealPower=false" :class "power" :tooltip "Power"
+    (box :orientation "v" :space-evenly false
+      (revealer :reveal revealPower :transition "slideup"
+        (scale :onchange "scripts/power.sh {}" :min 0 :max 101 :flipped true :orientation "v" :value 10 :class "power vscale" :round-digits 0)
+      )
+      (label :text "" :class "power vlabel")
+    )
+  )
+)

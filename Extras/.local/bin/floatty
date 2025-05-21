@@ -1,0 +1,2 @@
+#!/usr/bin/env dash
+hyprctl dispatch killwindow title:floatty | grep 'killWindow: no window found' && uwsm app -- kitty --title=floatty -e "$1"

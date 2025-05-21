@@ -1,0 +1,21 @@
+(defwidget volume []
+  (eventbox :class "volume" :onrightclick "uwsm app -- kitty --title=minitty -e pulsemixer &" :onmiddleclick "scripts/volume.sh mute" :onscroll "scripts/volume.sh {}" :onclick "eww update revealVolume=true" :onhoverlost "eww update revealVolume=false" :tooltip "Volume"
+    (box :orientation "h" :space-evenly false :class "volume box"
+      {volume == 100 ? " " : volume == 00 ? " " : volume}
+      (revealer :reveal revealVolume :transition "slideleft"
+        (scale :onchange "scripts/volume.sh {}" :min 0 :max 101 :orientation "h" :value "${volume}" :class "volume scale" :round-digits 0)
+      )
+    )
+  )
+)
+
+(defwidget vvolume []
+  (eventbox :class "volume" :onrightclick "uwsm app -- kitty --title=leftty -e pulsemixer &" :onmiddleclick "scripts/volume.sh mute" :onscroll "scripts/volume.sh {}" :onclick "eww update revealVolume=true" :onhoverlost "eww update revealVolume=false" :tooltip "Volume"
+    (box :orientation "v" :space-evenly false :class "volume vbox"
+      (revealer :reveal revealVolume :transition "slideup"
+        (scale :onchange "scripts/volume.sh {}" :min 0 :max 101 :orientation "v" :flipped true :value "${volume}" :class "volume vscale" :round-digits 0)
+      )
+      {volume == 100 ? " " : volume == 00 ? " " : volume}
+    )
+  )
+)

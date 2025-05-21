@@ -1,0 +1,10 @@
+[Unit]
+Description=Update Checker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/dash -c "%h/.config/eww/scripts/updates.sh --check"
+
+[Install]
+WantedBy=default.target

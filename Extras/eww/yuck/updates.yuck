@@ -1,0 +1,5 @@
+(defwidget updates []
+  (eventbox :class "updates" :onclick "scripts/updates.sh --update &" :tooltip "${updates.tooltip}" :visible "${updates.show}"
+      (label :text " " :class "updates icon")
+  )
+)

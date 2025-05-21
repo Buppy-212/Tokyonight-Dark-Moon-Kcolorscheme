@@ -1,0 +1,11 @@
+(defwidget battery []
+  (eventbox  :class "battery" :onclick "uwsm app -- kitty --title=floatty -e btop &" :tooltip "${EWW_BATTERY.BAT0.status}"
+    (label :class "battery label" :halign "center" :text "${EWW_BATTERY.BAT0.capacity}%")
+  )
+)
+
+(defwidget vbattery []
+  (eventbox  :class "vbattery" :onclick "uwsm app -- kitty --title=floatty -e btop &" :tooltip "${EWW_BATTERY.BAT0.status}"
+    (label :class "vbattery label" :halign "center" :text "${EWW_BATTERY.BAT0.capacity}")
+  )
+)

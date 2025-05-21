@@ -1,0 +1,26 @@
+#!/usr/bin/env dash
+
+check() {
+  {
+    paru -Qua
+    checkupdates
+  } | wc -l >"$HOME"/.local/state/updates
+  eww update updates="$(display)"
+}
+
+display() {
+  COUNT=$(cat "$HOME"/.local/state/updates)
+  if [ "$COUNT" = "0" ]; then
+    printf "{\"tooltip\":\"Updated\",\"show\":false}"
+  else
+    printf "{\"tooltip\":\"%s\",\"show\":true}" "$COUNT"
+  fi
+}
+
+if [ "$1" = "-c" ]; then
+  cat "$HOME/.local/state/updates"
+  exit
+fi
+
+paru -Syu
+check

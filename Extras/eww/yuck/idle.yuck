@@ -1,0 +1,15 @@
+(defwidget idle []
+  (box :orientation "h" :class "idle"
+    (button :class "idle button" :onclick "scripts/idle.sh --toggle" :tooltip "Idle Inhibitor"
+      (label :class "idle icon" :text idle)
+    )
+  )
+)
+
+(defwidget vidle []
+  (box :orientation "v" :class "idle"
+    (button :class "idle vbutton" :onclick "scripts/idle.sh --toggle" :tooltip "Idle Inhibitor"
+      (label :class "idle icon" :text idle)
+    )
+  )
+)

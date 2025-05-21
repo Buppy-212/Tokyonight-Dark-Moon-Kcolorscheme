@@ -1,0 +1,65 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 100%;
+}
+
+$background: #222436;
+$foreground: #c8d3f5;
+
+$black: #1b1d2b;
+$red: #ff757f;
+$orange: #ff966c;
+$yellow: #ffc777;
+$green: #c3e88d;
+$blue: #82aaff;
+$magenta: #c099ff;
+$cyan: #86e1fc;
+$darkgray: #313345;
+$lightgray: #414352;
+
+tooltip {
+  border: 2px solid $foreground;
+  color: $foreground;
+  background-color: $background;
+}
+
+.background {
+  .vbar {
+    background: transparent;
+  }
+  .bar {
+    background: transparent;
+  }
+}
+.bar {
+  background-color: $black;
+}
+.vbar {
+  background-color: $black;
+}
+
+.modules {
+  .top {
+    padding: 0 2px;
+  }
+  .bottom {
+    padding: 8px 2px 1px 2px;
+  }
+  .right {
+    padding: 0 0 0 8px;
+  }
+}
+
+@import "scss/battery.scss";
+@import "scss/bluetooth.scss";
+@import "scss/clock.scss";
+@import "scss/brightness.scss";
+@import "scss/gamemode.scss";
+@import "scss/idle.scss";
+@import "scss/power.scss";
+@import "scss/tray.scss";
+@import "scss/updates.scss";
+@import "scss/volume.scss";
+@import "scss/wifi.scss";
+@import "scss/workspaces.scss";

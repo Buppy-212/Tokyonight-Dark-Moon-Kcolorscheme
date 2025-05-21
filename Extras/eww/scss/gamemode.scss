@@ -1,0 +1,27 @@
+.gamemode {
+  .button {
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    background: transparent;
+    &:hover {
+      background-color: $darkgray;
+    }
+    &:active {
+      background-color: $black;
+    }
+  }
+  .icon {
+    color: $cyan;
+  }
+  .vbutton {
+    padding: 0;
+    background: transparent;
+  }
+  &:hover {
+    background-color: $darkgray;
+  }
+  &:active {
+    background-color: $black;
+  }
+}
