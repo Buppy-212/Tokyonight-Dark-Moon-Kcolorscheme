@@ -18,20 +18,27 @@ For Hyprland install qt6ct-kde
 paru -S qt6ct-kde
 ```
 
-and set QT_QPA_PLATFORMTHEME=qt6ct, with either
-env = QT_QPA_PLATFORMTHEME,qt6ct in your hyprland configuration or
-export QT_QPA_PLATFORMTHEME=qt6ct in your uwsm env file
+and set QT_QPA_PLATFORMTHEME=qt6ct.
 
 ## Extras
 
-- Zen
-- - ~/.zen/(your_profile)/chrome/userChrome.css
-- Musescore
-- - ~/.config/Musescore.ini"
-- Vesktop
-- - ~/.config/vesktop/themes/midnight-tokyonight-moon.theme.css
-- OBS
-- - ~/.config/obs-studio/themes/Tokyonight-Dark-Moon.ovt
-- Rofi
-- - ~/.config/rofi/themes/tokyonight.rasi
-- - Use @theme "tokyonight" to import into main rofi config
+### Zen
+
+Copy userChrome.css into ~/.zen/(your_profile)/chrome/
+
+### Musescore
+
+Copy Musescore.ini into ~/.config/
+
+### Vesktop
+
+Copy midnight-tokyonight-moon.theme.css into ~/.config/vesktop/themes/
+
+### OBS
+
+Copy Tokyonight-Dark-Moon.ovt into ~/.config/obs-studio/themes/
+
+### Rofi
+
+Copy tokyonight.rasi into ~/.config/rofi/themes/
+Use @theme "tokyonight" to import into main rofi config
