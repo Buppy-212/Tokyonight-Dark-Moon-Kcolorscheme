@@ -7,7 +7,7 @@ Enable=false
 
 [Colors:Window]
 BackgroundNormal=#222436
-BackgroundAlternate=#222346
+BackgroundAlternate=#222436
 DecorationFocus=#589ed7
 DecorationHover=#589ed7
 ForegroundActive=#e9e9ed
