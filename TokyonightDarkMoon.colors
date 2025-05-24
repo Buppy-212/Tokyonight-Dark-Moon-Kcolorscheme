@@ -1,27 +1,28 @@
-[General]
-Name=Tokyonight Dark Moon
-shadeSortColumn=false
-
 [ColorEffects]
 Enable=false
 
-[Colors:Window]
-BackgroundNormal=#222436
-BackgroundAlternate=#222436
-DecorationFocus=#589ed7
-DecorationHover=#589ed7
-ForegroundActive=#e9e9ed
-ForegroundInactive=#e9e9ed
-ForegroundLink=#4fd6be
-ForegroundNegative=#ff757f
-ForegroundNeutral=#e9e9ed
-ForegroundNormal=#e9e9ed
-ForegroundPositive=#c3e88d
-ForegroundVisited=#c8d3f5
+[ColorEffects:Disabled]
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=0
+IntensityAmount=0.1
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=-0.9500000000000001
+ColorEffect=0
+ContrastAmount=0.1
+ContrastEffect=0
+IntensityAmount=0
+IntensityEffect=0
 
 [Colors:Button]
-BackgroundNormal=#313345
 BackgroundAlternate=#2d3f76
+BackgroundNormal=#313345
 DecorationFocus=#589ed7
 DecorationHover=#589ed7
 ForegroundActive=#e9e9ed
@@ -34,8 +35,8 @@ ForegroundPositive=#c3e88d
 ForegroundVisited=#c8d3f5
 
 [Colors:Complementary]
-BackgroundNormal=#222436
 BackgroundAlternate=#222436
+BackgroundNormal=#222436
 DecorationFocus=#589ed7
 DecorationHover=#589ed7
 ForegroundActive=#e9e9ed
@@ -48,8 +49,8 @@ ForegroundPositive=#c3e88d
 ForegroundVisited=#c8d3f5
 
 [Colors:Selection]
-BackgroundNormal=#589ed7
 BackgroundAlternate=#589ed7
+BackgroundNormal=#589ed7
 DecorationFocus=#589ed7
 DecorationHover=#589ed7
 ForegroundActive=#e9e9ed
@@ -62,8 +63,8 @@ ForegroundPositive=#c3e88d
 ForegroundVisited=#c8d3f5
 
 [Colors:Tooltip]
-BackgroundNormal=#222436
 BackgroundAlternate=#222436
+BackgroundNormal=#222436
 DecorationFocus=#589ed7
 DecorationHover=#589ed7
 ForegroundActive=#e9e9ed
@@ -76,8 +77,8 @@ ForegroundPositive=#c3e88d
 ForegroundVisited=#c8d3f5
 
 [Colors:View]
-BackgroundNormal=#2a2c3d
 BackgroundAlternate=#2a2c3d
+BackgroundNormal=#2a2c3d
 DecorationFocus=#589ed7
 DecorationHover=#589ed7
 ForegroundActive=#e9e9ed
@@ -88,6 +89,24 @@ ForegroundNeutral=#e9e9ed
 ForegroundNormal=#e9e9ed
 ForegroundPositive=#c3e88d
 ForegroundVisited=#c8d3f5
+
+[Colors:Window]
+BackgroundAlternate=#222436
+BackgroundNormal=#222436
+DecorationFocus=#589ed7
+DecorationHover=#589ed7
+ForegroundActive=#e9e9ed
+ForegroundInactive=#e9e9ed
+ForegroundLink=#4fd6be
+ForegroundNegative=#ff757f
+ForegroundNeutral=#e9e9ed
+ForegroundNormal=#e9e9ed
+ForegroundPositive=#c3e88d
+ForegroundVisited=#c8d3f5
+
+[General]
+Name=Tokyonight Dark Moon
+shadeSortColumn=false
 
 [KDE]
 contrast=0
