@@ -20,6 +20,14 @@ paru -S qt6ct-kde
 
 and set QT_QPA_PLATFORMTHEME=qt6ct.
 
+### Flatpak
+
+Copy kdeglobals to .config then make flatpaks use kde theming.
+
+```bash
+flatpak --user override --env=QT_QPA_PLATFORMTHEME=kde
+```
+
 ## Extras
 
 ### Zen
