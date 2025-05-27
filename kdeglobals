@@ -146,7 +146,7 @@ toolBarFont=Adwaita Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Theme=Papirus-Dark
 
 [KDE]
-widgetStyle=qt6ct-style
+widgetStyle=Darkly
 
 [KFileDialog Settings]
 Allow Expansion=false
